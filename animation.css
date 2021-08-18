@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(#161730, #2D2447, #2E5575, #1E1F4E);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.night {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background: url('./Assets/car-assets/Img_1.png');
+    background-size: cover;
+    position: relative;
+}
+
+.surface {
+    height: 140px;
+    width: 500%;
+    background: url('./Assets/car-assets/Img_02.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+}
+
+.car {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+@keyframes moveRight{
+    100%{transform: translateX(-2950px)}
+}
